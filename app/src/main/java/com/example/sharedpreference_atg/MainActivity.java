@@ -61,7 +61,19 @@ public class MainActivity extends AppCompatActivity {
                    if(TextUtils.isEmpty(UserName)){
                        edtUsername.setError("Username can't be blank.");
                        Log.i("Username","is empty");
+                   }else {
+                       Log.i("Username",edtUsername.getText().toString());
                    }
+
+                    if(TextUtils.isEmpty(PassWord)){
+                        edtPassword.setError("Password can't be blank.");
+                        Log.i("Password","is empty");
+                    }else {
+                        Log.i("Password",edtPassword.getText().toString());
+                    }
+
+                     toast = Toast.makeText(getApplicationContext(),"Something went wrong\nPlaese input username and Password",Toast.LENGTH_SHORT);
+
                 }
             }
         });
